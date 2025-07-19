@@ -15,8 +15,8 @@ def top_ten(subreddit):
             posts = data['data']['children']
             for post in posts:
                 print(post['data']['title'])
-            print("OK")
+            print("OK", end='')
         except (KeyError, IndexError):
-            print("OK")
+            print("OK", end='')
     else:
-        print("OK")
+        print("OK", end='')
